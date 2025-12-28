@@ -1,0 +1,239 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+  padding: var(--space-3xl) 0;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin: var(--space-md) 0;
+  line-height: 1.1;
+}
+
+.heroDescription {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+  max-width: 500px;
+}
+
+.heroCtas {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.heroVisual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.codeBlock {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  max-width: 450px;
+  width: 100%;
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.fileName {
+  margin-left: var(--space-sm);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.code {
+  margin: 0;
+  padding: var(--space-lg);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+}
+
+/* Sections */
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.sectionHeader h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.sectionHeader p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Strategy Cards */
+.strategyCard {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.cardIcon {
+  font-size: 2rem;
+}
+
+.strategyCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.strategyCard p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  flex: 1;
+  margin-bottom: var(--space-md);
+}
+
+.cardLink {
+  color: var(--accent-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Feature Cards */
+.featureCard {
+  text-decoration: none;
+}
+
+.featureCard h4 {
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.featureCard p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-md);
+}
+
+.featureCode {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--accent-primary);
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table th {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.table td {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr:hover {
+  background: var(--bg-glass);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-2xl);
+  }
+
+  .heroContent h1 {
+    font-size: 2.25rem;
+  }
+
+  .heroDescription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroCtas {
+    justify-content: center;
+  }
+
+  .heroVisual {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table {
+    font-size: 0.8rem;
+  }
+
+  .table th,
+  .table td {
+    padding: var(--space-sm);
+  }
+}

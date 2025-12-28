@@ -1,0 +1,147 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.header {
+  margin-bottom: var(--space-2xl);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.header h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Info Card */
+.infoCard {
+  margin-bottom: var(--space-xl);
+}
+
+.infoCard h4 {
+  margin-bottom: var(--space-md);
+}
+
+.infoList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Data Card */
+.dataCard {
+  margin-bottom: var(--space-2xl);
+}
+
+.dataCard h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.hint {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: var(--space-lg);
+}
+
+.dataGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.dataLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.dataValue {
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+/* Code Section */
+.codeSection {
+  margin-bottom: var(--space-2xl);
+}
+
+.codeSection h3 {
+  margin-bottom: var(--space-md);
+}
+
+.codeBlock {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.fileName {
+  margin-left: var(--space-sm);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.codeBlock pre {
+  margin: 0;
+  padding: var(--space-lg);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  background: transparent;
+  border: none;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+  }
+}

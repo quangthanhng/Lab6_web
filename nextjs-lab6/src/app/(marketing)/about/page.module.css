@@ -1,0 +1,120 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.badges {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-bottom: var(--space-md);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.infoList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Content Grid */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-3xl);
+}
+
+.card {
+  text-align: center;
+}
+
+.icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.card h3 {
+  margin-bottom: var(--space-md);
+}
+
+.card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.card ul {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Use Cases */
+.useCases {
+  margin-bottom: var(--space-2xl);
+}
+
+.useCases h2 {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.useCaseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.useCaseGrid h4 {
+  margin-bottom: var(--space-md);
+}
+
+.useCaseGrid pre {
+  font-size: 0.8rem;
+  margin: 0;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+/* CTA */
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .useCaseGrid {
+    grid-template-columns: 1fr;
+  }
+}

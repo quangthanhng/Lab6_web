@@ -1,0 +1,144 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.header {
+  margin-bottom: var(--space-2xl);
+}
+
+.badges {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.header h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.infoList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.postsGrid {
+  display: grid;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-3xl);
+}
+
+.postCard {
+  text-decoration: none;
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.postCard h2 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.postCard p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-md);
+}
+
+.postMeta {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-primary);
+  background: rgba(99, 102, 241, 0.1);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.readTime {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.postFooter {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-color);
+  font-size: 0.875rem;
+}
+
+.author {
+  color: var(--text-secondary);
+}
+
+.date {
+  color: var(--text-muted);
+}
+
+/* Code Section */
+.codeSection {
+  margin-top: var(--space-2xl);
+}
+
+.codeSection h3 {
+  margin-bottom: var(--space-md);
+}
+
+.codeBlock {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.codeHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.fileName {
+  margin-left: var(--space-sm);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.codeBlock pre {
+  margin: 0;
+  padding: var(--space-lg);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  background: transparent;
+  border: none;
+}
